@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    margin: 0;
+}
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.center_format {
+    justify-content: center;
+    align-items: center;
+}
+.top_block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    min-height: 200px;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: space-between;
+}
+.function {
+    display: flex;
+    width: 49.4%;
+    min-height: 33.33%;
+    background: silver;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.top_icon {
+    min-width: 20%;
+    min-height: 20%;
+    text-align: center;
+}
+.description > h3 {
+    text-align: left;
+    margin-top: 16px;
+    padding-left: 16px;
+    margin-bottom: 0;
+}
+i {
+    font-size: 50px;
+    color: #16457a;
+}
+.reference {
+    width: 80%;
+    height: 100%;
+}
+.middle_block {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    min-height: 200px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+.middle_element {
+    width: 32%;
+    min-height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 2px solid #16457a;
+    box-sizing: border-box;
+}
+.element_format {
+    display: flex;
+    flex-direction: column;
+}
+.middle_element > h3 {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.icon {
+    text-align: center;
+}
+p {
+    text-align: justify;
+    padding: 10px;
+    margin: 6px;
+}
+.reference {
+    text-align: center;
+    margin-top: 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background: #16457a;;
+}
+.bottom_block {
+    width: 95%;
+    min-height: 200px;
+    background: #16457a;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.bottom_element {
+    margin-top: 30px;
+    width: 30%;
+    height: 50%;
+    background: silver;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+.bottom_element > p {
+    text-align: center;
+}
+.bottom_element > i {
+    font-size: 50px;
+}
+.bottom_element > h3 {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+img {
+    width: 70px;
+}
+.round_photo {
+    border-radius: 100px;
+    border: 2px solid #16457a;
+}
+.bottom_inscription {
+    width: 95%;
+}
+.bottom_block > p {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}

@@ -1,0 +1,49 @@
+h1 {
+    background: cornflowerblue;
+    color: #fcc256;
+}
+div > a {
+    text-decoration: none;
+}
+.homer > a > h2 {
+    background: silver;
+    color: blue;
+}
+.homer > p {
+    text-align: justify;
+    font-size: 18px;
+    color: brown;
+    background: wheat;
+}
+.homer > ul > li {
+    background: silver;
+    color: midnightblue;
+}
+.bart > a > h2 {
+    background: chocolate;
+    color: lightcoral;
+}
+.bart > p {
+    text-align: justify;
+    font-size: 18px;
+    color: lightcoral;
+    background: midnightblue;
+}
+.bart > ul > li {
+    background: cornflowerblue;
+    color: cornsilk;
+}
+.lisa > a > h2 {
+    background: papayawhip;
+    color: yellowgreen;
+}
+.lisa > p {
+    text-align: justify;
+    font-size: 18px;
+    color: firebrick;
+    background: darkslateblue;
+}
+.lisa > ul > li {
+    background: snow;
+    color: darkred;
+}
