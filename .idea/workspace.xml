@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b5592bc-cbde-4c06-abf2-0dc00c85c413" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWorks.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/Lesson1/images/bart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/Lesson1/images/homer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/Lesson1/images/lisa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/Lesson1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/Lesson1/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/Lesson2/images/girl_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/Lesson2/images/girl_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/Lesson2/images/girl_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/Lesson2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/Lesson2/main.css" afterDir="false" />
+    <list default="true" id="5b5592bc-cbde-4c06-abf2-0dc00c85c413" name="Changes" comment="Add HomeWork for Lesson 2">
+      <change afterPath="$PROJECT_DIR$/html/Lesson3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/Lesson3/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,23 +34,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/100062924/OktenSchool/Task_1",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/100062924/OktenSchool/Task_1&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\100062924\OktenSchool\HomeWorks\html\Lesson2\images" />
@@ -86,12 +74,25 @@
       <workItem from="1674149519736" duration="2452000" />
       <workItem from="1674160539351" duration="663000" />
       <workItem from="1674245585412" duration="3564000" />
-      <workItem from="1674294863070" duration="30263000" />
+      <workItem from="1674294863070" duration="30623000" />
+      <workItem from="1674389238323" duration="12917000" />
     </task>
+    <task id="LOCAL-00001" summary="Add HomeWork for Lesson 2">
+      <created>1674337306949</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674337306949</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add HomeWork for Lesson 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add HomeWork for Lesson 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
