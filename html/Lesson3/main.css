@@ -1,64 +1,67 @@
 body {
-    display: flex;
     margin: 0;
 }
 .wrap {
+    height: 100vh;
+}
+.width_100 {
     width: 100%;
-    height: 600px;
-    display: flex;
-    flex-wrap: wrap;
 }
 .top_block {
-    width: 100%;
-    height: 15%;
-    background: #CDD7E0FF;
+    height: 25%;
 }
 .middle_block {
-    width: 100%;
-    height: 60%;
+    height: 50%;
     background: #16457a;
 }
-.ghost_element {
-    width: 15%;
-    min-height: 25%;
-    background: #6964e1;
+.ghost_setup {
     border: 1px solid #CDD7E0FF;
-    border-radius: 10px;
     position: absolute;
-    box-sizing: border-box; /*??*/
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
+}
+.element {
+    width: 15%;
+    min-height: 30%;
+    background: #6964e1;
+    border-radius: 10px;
+    box-sizing: border-box;
     flex-direction: column;
     padding: 20px 10px;
 }
 .emblem {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     border-radius: 100px;
     background: #16457a;
-    border: 1px solid #CDD7E0FF;
-    position: absolute;
-    display: flex;
-    top: -11%;
-    justify-content: center;
-    align-items: center;
+}
+.photo_shifted {
+    top: 85%;
+}
+.icon_shifted {
+    top: -15%;
+}
+img {
+    width: 100%;
+    border-radius: 100px;
 }
 i {
-    font-size: 20px;
+    font-size: 25px;
     color: #CDD7E0FF;
 }
 h3 {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     margin: 0;
 }
 a {
     text-decoration: none;
-    color: white;
-    padding: 10px;
+    color: #CDD7E0FF;
+    padding: 7px;
     background: #16457a;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 p {
     font-size: 14px;
@@ -66,20 +69,25 @@ p {
     padding: 10px;
     margin: 0 0 10px 0;
 }
-.first {
+.high_vertical_shift {
+    top: 12.5%;
+}
+.low_vertical_shift {
     top: 62.5%;
+}
+.first_el_horizontal_shift {
     left: 25%;
 }
-.second {
-    top: 62.5%;
+.second_el_horizontal_shift {
     left: 42.5%;
 }
-.third {
-    top: 62.5%;
+.third_el_horizontal_shift {
     left: 60%;
 }
 .bottom_block {
-    width: 100%;
     height: 25%;
+
+}
+.bottom_block, .top_block {
     background: #CDD7E0FF;
 }

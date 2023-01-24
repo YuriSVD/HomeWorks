@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b5592bc-cbde-4c06-abf2-0dc00c85c413" name="Changes" comment="Add HomeWork for Lesson 2">
-      <change afterPath="$PROJECT_DIR$/html/Lesson3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/Lesson3/main.css" afterDir="false" />
+    <list default="true" id="5b5592bc-cbde-4c06-abf2-0dc00c85c413" name="Changes" comment="Add HomeWork for Lesson 3">
+      <change afterPath="$PROJECT_DIR$/html/Lesson3/images/girl_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/Lesson3/images/girl_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/Lesson3/images/girl_3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Lesson3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Lesson3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Lesson3/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/Lesson3/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -40,7 +44,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/100062924/OktenSchool/Task_1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/100062924/OktenSchool/HomeWorks/html/Lesson3/images&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -53,6 +57,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\100062924\OktenSchool\HomeWorks\html\Lesson3\images" />
       <recent name="C:\Users\100062924\OktenSchool\HomeWorks\html\Lesson2\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -75,7 +80,14 @@
       <workItem from="1674160539351" duration="663000" />
       <workItem from="1674245585412" duration="3564000" />
       <workItem from="1674294863070" duration="30623000" />
-      <workItem from="1674389238323" duration="12917000" />
+      <workItem from="1674389238323" duration="23460000" />
+      <workItem from="1674426090220" duration="414000" />
+      <workItem from="1674476351121" duration="98000" />
+      <workItem from="1674496816634" duration="1559000" />
+      <workItem from="1674501938119" duration="106000" />
+      <workItem from="1674502116190" duration="120000" />
+      <workItem from="1674502354408" duration="3032000" />
+      <workItem from="1674582831813" duration="854000" />
     </task>
     <task id="LOCAL-00001" summary="Add HomeWork for Lesson 2">
       <created>1674337306949</created>
@@ -84,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674337306949</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add HomeWork for Lesson 3">
+      <created>1674404040894</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674404040894</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,7 +111,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add HomeWork for Lesson 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add HomeWork for Lesson 2" />
+    <MESSAGE value="Add HomeWork for Lesson 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add HomeWork for Lesson 3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
