@@ -12,7 +12,6 @@ body {
 }
 .middle_block {
     height: 50%;
-    background: #16457a;
 }
 .ghost_setup {
     border: 1px solid #CDD7E0FF;
@@ -34,7 +33,6 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 100px;
-    background: #16457a;
 }
 .photo_shifted {
     top: 85%;
@@ -43,12 +41,10 @@ body {
     top: -15%;
 }
 img {
-    width: 100%;
     border-radius: 100px;
 }
 i {
     font-size: 25px;
-    color: #CDD7E0FF;
 }
 h3 {
     font-size: 16px;
@@ -57,9 +53,7 @@ h3 {
 }
 a {
     text-decoration: none;
-    color: #CDD7E0FF;
     padding: 7px;
-    background: #16457a;
     margin-bottom: 10px;
     border-radius: 5px;
 }
@@ -86,8 +80,13 @@ p {
 }
 .bottom_block {
     height: 25%;
-
 }
 .bottom_block, .top_block {
     background: #CDD7E0FF;
+}
+.middle_block, .emblem, a {
+    background: #16457a;
+}
+a, i {
+    color: #CDD7E0FF;
 }
