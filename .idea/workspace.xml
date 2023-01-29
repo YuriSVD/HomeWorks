@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b5592bc-cbde-4c06-abf2-0dc00c85c413" name="Changes" comment="Add three absolute blocks, update css">
+    <list default="true" id="5b5592bc-cbde-4c06-abf2-0dc00c85c413" name="Changes" comment="update css for Lesson3">
+      <change afterPath="$PROJECT_DIR$/html/Lesson4/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/Lesson4/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Lesson3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Lesson3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Lesson3/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/Lesson3/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -41,7 +41,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/100062924/OktenSchool/HomeWorks/html/Lesson3/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/100062924/OktenSchool/HomeWorks/html/hhh&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -54,12 +54,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\100062924\OktenSchool\HomeWorks\html\hhh" />
       <recent name="C:\Users\100062924\OktenSchool\HomeWorks\html\Lesson3\images" />
       <recent name="C:\Users\100062924\OktenSchool\HomeWorks\html\Lesson2\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\100062924\OktenSchool\HomeWorks\html\Lesson2\images" />
       <recent name="C:\Users\100062924\OktenSchool\HomeWorks\html" />
+      <recent name="C:\Users\100062924\OktenSchool\HomeWorks\html\Lesson2\images" />
       <recent name="C:\Users\100062924\OktenSchool\HomeWorks\Lesson1\images" />
       <recent name="C:\Users\100062924\OktenSchool\HomeWorks\Lesson1" />
     </key>
@@ -84,7 +85,13 @@
       <workItem from="1674501938119" duration="106000" />
       <workItem from="1674502116190" duration="120000" />
       <workItem from="1674502354408" duration="3032000" />
-      <workItem from="1674582831813" duration="2617000" />
+      <workItem from="1674582831813" duration="3418000" />
+      <workItem from="1674646703331" duration="385000" />
+      <workItem from="1674675606037" duration="1478000" />
+      <workItem from="1674750470157" duration="6350000" />
+      <workItem from="1674844645315" duration="7907000" />
+      <workItem from="1674906856759" duration="23751000" />
+      <workItem from="1674988436562" duration="4835000" />
     </task>
     <task id="LOCAL-00001" summary="Add HomeWork for Lesson 2">
       <created>1674337306949</created>
@@ -107,17 +114,36 @@
       <option name="project" value="LOCAL" />
       <updated>1674587143528</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update css for Lesson3">
+      <created>1674592523206</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674592523206</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add HomeWork for Lesson 2" />
     <MESSAGE value="Add HomeWork for Lesson 3" />
     <MESSAGE value="Add three absolute blocks, update css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add three absolute blocks, update css" />
+    <MESSAGE value="update css for Lesson3" />
+    <option name="LAST_COMMIT_MESSAGE" value="update css for Lesson3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
