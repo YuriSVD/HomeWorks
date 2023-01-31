@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b5592bc-cbde-4c06-abf2-0dc00c85c413" name="Changes" comment="Add HomeTask for Lesson4">
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson1/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson2/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson3/additional1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson3/additional1/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson3/additional3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson3/additional3/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson3/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5b5592bc-cbde-4c06-abf2-0dc00c85c413" name="Changes" comment="JS Homework for Lesson1, Lesson2, Lesson3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +93,7 @@
       <workItem from="1674994435931" duration="12207000" />
       <workItem from="1675024547650" duration="2078000" />
       <workItem from="1675097869221" duration="11513000" />
-      <workItem from="1675179175461" duration="8170000" />
+      <workItem from="1675179175461" duration="8878000" />
     </task>
     <task id="LOCAL-00001" summary="Add HomeWork for Lesson 2">
       <created>1674337306949</created>
@@ -143,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674993634845</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="JS Homework for Lesson1, Lesson2, Lesson3">
+      <created>1675198255094</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675198255094</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +160,8 @@
     <MESSAGE value="Add three absolute blocks, update css" />
     <MESSAGE value="update css for Lesson3" />
     <MESSAGE value="Add HomeTask for Lesson4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add HomeTask for Lesson4" />
+    <MESSAGE value="JS Homework for Lesson1, Lesson2, Lesson3" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS Homework for Lesson1, Lesson2, Lesson3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

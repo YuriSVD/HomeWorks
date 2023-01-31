@@ -12,11 +12,19 @@ let a = "hello",
     isTrue = true,
     isFalse = false;
 
-array = [a, b, c, d, e, f, g, h, i, j, k, isTrue, isFalse];
-
-for (let z = 0; z < array.length; z++) {
-    console.log(array[z])
-}
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(e);
+console.log(f);
+console.log(g);
+console.log(h);
+console.log(i);
+console.log(j);
+console.log(k);
+console.log(isTrue);
+console.log(isFalse);
 
 let firstName = "Юрій";
 let middleName = "Юрійович";
@@ -32,6 +40,5 @@ console.log(typeof m);
 console.log(typeof n);
 firstName = prompt("Enter your first name");
 middleName = prompt("Enter your middle name");
-lastName = prompt("Enter your last name");
-alert(`Your full name: ${firstName} ${middleName} ${lastName}`);
-console.log(`${firstName} ${middleName} ${lastName}`);
+age = prompt("Enter your age");
+console.log(`${firstName} ${middleName} ${age}`);
