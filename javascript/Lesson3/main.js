@@ -26,7 +26,7 @@ let listOfItems = ['html',
 
 for (let i = 0; i < listOfItems.length; i++) {
     document.write(`<ul>
-        <li>${listOfItems[i]}</li>
+    <li>${listOfItems[i]}</li>
     </ul>`);
 }
 ////////////////////////////////////////////////////
