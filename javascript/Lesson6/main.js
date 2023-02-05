@@ -15,29 +15,26 @@ console.log(a.toLowerCase());
 console.log(b.toLowerCase());
 console.log(c.toLowerCase());
 //- Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
-let str = " dirty string   ";
+let dirtyStr = " dirty string   ";
 let startIndex;
 let endIndex;
-for (let i = 0; i < str.length; i++) {
-    if (str.charAt(i) !== " ") {
+for (let i = 0; i < dirtyStr.length; i++) {
+    if (dirtyStr.charAt(i) !== " ") {
         startIndex = i;
-        for (i = str.length - 1; i > startIndex; i--) {
-            if (str.charAt(i) !== " ") {
+        for (i = dirtyStr.length - 1; i > startIndex; i--) {
+            if (dirtyStr.charAt(i) !== " ") {
                 endIndex = i + 1;
                 break;
             }
         }
     }
 }
-let clearString = str.substring(startIndex, endIndex);
-console.log(clearString);
-console.log(str.length);
-console.log(clearString.length);
+let clearStr = dirtyStr.substring(startIndex, endIndex);
 //- Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
 // let str = 'Ревуть воли як ясла повні';
 // let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
-let panasMyrnyi = "Ревуть воли як ясла повні";
-console.log(stringToArray(panasMyrnyi));
+let str = "Ревуть воли як ясла повні";
+console.log(stringToArray(str));
 function stringToArray(str) {
     return str.split(" ");
 }

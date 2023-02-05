@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b5592bc-cbde-4c06-abf2-0dc00c85c413" name="Changes" comment="Update JS Lesson1">
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson4/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson5/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson6/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson6/main.js" afterDir="false" />
+    <list default="true" id="5b5592bc-cbde-4c06-abf2-0dc00c85c413" name="Changes" comment="Update JS Lesson2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/Lesson2/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson2/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/Lesson3/additional1/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson3/additional1/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/Lesson3/additional3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson3/additional3/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/Lesson3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson3/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/Lesson3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson3/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/Lesson4/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson4/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/Lesson5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson5/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/Lesson5/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson5/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/Lesson6/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson6/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +105,8 @@
       <workItem from="1675024547650" duration="2078000" />
       <workItem from="1675097869221" duration="11513000" />
       <workItem from="1675179175461" duration="32872000" />
-      <workItem from="1675377485314" duration="6322000" />
+      <workItem from="1675377485314" duration="9101000" />
+      <workItem from="1675525001263" duration="32965000" />
     </task>
     <task id="LOCAL-00001" summary="Add HomeWork for Lesson 2">
       <created>1674337306949</created>
@@ -155,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675200381867</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update JS Lesson2">
+      <created>1675453602558</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675453602558</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +189,8 @@
     <MESSAGE value="Add HomeTask for Lesson4" />
     <MESSAGE value="JS Homework for Lesson1, Lesson2, Lesson3" />
     <MESSAGE value="Update JS Lesson1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update JS Lesson1" />
+    <MESSAGE value="Update JS Lesson2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update JS Lesson2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

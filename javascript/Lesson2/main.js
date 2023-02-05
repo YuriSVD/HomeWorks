@@ -18,15 +18,19 @@ let thirdBook = {title : "thirdTitle", pageCount : 300, genre : "thirdGenre"};
 let anotherFirstBook = {title : "first_title",
     pageCount : 100,
     genre : "firstGenre",
-    authors : {name : "firstName", age : 30}};
+    authors : [ {name : "firstName", age : 30},
+                {name : "anotherFirstName", age : 35}]};
 let anotherSecondBook = {title : "second_title",
     pageCount : 200,
     genre : "secondGenre",
-    authors : {name : "secondName", age : 40}};
+    authors : [{name : "secondName", age : 40}]};
 let anotherThirdBook = {title : "third_title",
     pageCount : 300,
     genre : "thirdGenre",
-    authors : {name : "thirdName", age : 50}};
+    authors : [{name : "thirdName", age : 50},
+                {name : "anotherThirdName", age : 55},
+                {name : "someThirdName", age : 60}]};
+console.log(anotherThirdBook);
 //- Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 let userArray = [user1 = {name : "name1", username : "username1", password : "password1"},
     user2 = {name : "name2", username : "username2", password : "password2"},

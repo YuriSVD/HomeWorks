@@ -46,12 +46,17 @@ function unOrderedListCreator(text) {
 let countOfLi = 3;
 unOrderedListCreatorWithCounter(textForLi, countOfLi);
 function unOrderedListCreatorWithCounter(text, number) {
-    let ul = document.querySelector("ul");
+    /*let ul = document.querySelector("ul");
     for (let i = 0; i < number; i++) {
         let li = document.createElement("li");
         li.innerText = text;
         ul.append(li);
+    }*/
+    document.write(`<ul>`);
+    for (let i = 0; i < number; i++) {
+        document.write(`<li>${text}</li>`);
     }
+    document.write(`</ul>`)
 }
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 listFromArray(array);
@@ -74,9 +79,11 @@ let userArray = [user1 = {id : 1, name : "name1", age : 21},
 docsFromUser(userArray);
 function docsFromUser(array) {
     for (const user of array) {
-        document.write(`<div>
-        id: ${user.id}, name: ${user.name}, age: ${user.age}
-        </div>`)
+        document.write(`<div>`);
+        for (const userKey in user) {
+            document.write(`<li>${userKey} : ${user[userKey]}</li>`); // ??
+        }
+        document.write(`</div>`);
     }
 }
 //- створити функцію яка повертає найменьше число з масиву
