@@ -110,10 +110,9 @@ let citiesWithId = [
 //     // TO BE CONTINUED .....
 // ]
 let usersWithCities = [];
-for (let user of usersWithId) {
-    usersWithCities[usersWithCities.length] = {user, address: {
-
-    }}
+for (let i = 0; i < usersWithId.length; i++) {
+    usersWithCities[i] = usersWithId[i];
+    usersWithCities[i].address = citiesWithId[i];
 }
 console.log(usersWithCities);
 //- Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.

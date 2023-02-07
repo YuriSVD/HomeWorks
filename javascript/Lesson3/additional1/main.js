@@ -60,7 +60,7 @@ for (i = 0; i < array.length; i++) {
 }
 // 7. замінити кожне число кратне 3 на слово "okten"
 for (i = 0; i < array.length; i++) {
-    if (!(array[i] % 3)) { // array[i] % 3 === 0
+    if (!(array[i] % 3)) {
         array[i] = "okten";
     }
 }
@@ -83,13 +83,13 @@ for (i = array.length - 1; i > -1; i--) {
 // 3. перебрати циклом while та вивести  числа тільки з непарним індексом
 i = array.length - 1;
 while (i >= 0) {
-    if (i % 2) { // if (i % 2 !== 0) {
+    if (i % 2) {
         console.log(array[i]);
     }
     i--;
 }
 // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
-for (i = array.length -1; i >= 0; i--) {
+for (i = array.length - 1; i >= 0; i--) {
     if (i % 2) {
         console.log(array[i]);
     }
@@ -115,17 +115,21 @@ for (i = array.length - 1; i >= 0; i--) {
     }
 }
 //створити масив книжок (назва, кількість сторінок, автори , жанри).
-let books = [{name : "book_name", pages : 100, authors : ["Bill", "John"], genre: ["1", "2", "3"]},
-            {name : "something_book_name", pages : 500, authors : ["Mike"], genre: ["1"]},
-            {name: "another_book_name", pages: 340, authors: ["Flora", "Fauna"], genre: ["1", "2"]}];
+let books = [{name: "book_name", pages: 100, authors: ["Bill", "John"], genre: ["1", "2", "3"]},
+    {name: "something_book_name", pages: 500, authors: ["Mike"], genre: ["1"]},
+    {name: "another_book_name", pages: 340, authors: ["Flora", "Fauna"], genre: ["1", "2"]}];
 //-знайти наібльшу книжку.
 //- знайти книжку/ки з найбільшою кількістю жанрів
 // - знайти книжку/ки з найдовшою назвою
 // - знайти книжку/ки які писали 2 автори
 // - знайти книжку/ки які писав 1 автор
+let biggestBook = books[0];
 let biggestCountGenres = books[0];
 let lagerBookName = books[0];
 for (i = 1; i < books.length; i++) {
+    if (books[i].pages > biggestBook.pages) {
+        biggestBook = books[i];
+    }
     if (books[i].genre.length > biggestCountGenres.genre.length) {
         biggestCountGenres = books[i];
     }
@@ -139,5 +143,17 @@ for (i = 1; i < books.length; i++) {
         console.log("Book " + books[i].name + " wrote by one author");
     }
 }
-console.log(biggestCountGenres);
-console.log(lagerBookName);
+let biggestCountGenresArray = [biggestCountGenres];
+let lagerBookNameArray = [lagerBookName];
+for (i = 1; i < books.length; i++) {
+    if (books[i].genre.length === biggestCountGenres.genre.length) {
+        biggestCountGenresArray[biggestCountGenresArray.length] = books[i];
+    }
+    if (books[i].name.length === lagerBookName.name.length) {
+        lagerBookNameArray[lagerBookNameArray.length] = books[i];
+    }
+}
+console.log(`Book ${biggestBook.name} is the biggest book`);
+console.log(`Books ${biggestCountGenresArray} has the most genres`);
+console.log(`Books ${lagerBookNameArray} has the largest name`);
+// попахує говнокодом, але нічого іншого не лізе в голову з тим що вчили
