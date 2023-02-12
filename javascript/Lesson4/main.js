@@ -19,7 +19,7 @@ function cylinderSquare(r, h) {
     return 2 * Math.PI * r * (h + r);
 }
 //- створити функцію яка приймає масив та виводить кожен його елемент
-let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let array = [1, 19, "hello", true, {name: "Vasyl", age: 33}];
 functionForArray(array);
 function functionForArray(array) {
     for (const data of array) {
@@ -34,8 +34,8 @@ function paragraphCreator(text) {
 }
 //- створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 let textForLi = "Some text for li";
-unOrderedListCreator(textForLi);
-function unOrderedListCreator(text) {
+unorderedListCreator(textForLi);
+function unorderedListCreator(text) {
     document.write(`<ul>
     <li>${text}</li>
     <li>${text}</li>
@@ -44,14 +44,8 @@ function unOrderedListCreator(text) {
 }
 //- створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 let countOfLi = 3;
-unOrderedListCreatorWithCounter(textForLi, countOfLi);
-function unOrderedListCreatorWithCounter(text, number) {
-    /*let ul = document.querySelector("ul");
-    for (let i = 0; i < number; i++) {
-        let li = document.createElement("li");
-        li.innerText = text;
-        ul.append(li);
-    }*/
+unorderedListCreatorWithCounter(textForLi, countOfLi);
+function unorderedListCreatorWithCounter(text, number) {
     document.write(`<ul>`);
     for (let i = 0; i < number; i++) {
         document.write(`<li>${text}</li>`);
@@ -61,9 +55,11 @@ function unOrderedListCreatorWithCounter(text, number) {
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 listFromArray(array);
 function listFromArray(array) {
+    document.write(`<ul>`);
     for (const data of array) {
         document.write(`<li>${data}</li>`);
     }
+    document.write(`</ul>`);
 }
 //- створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 let userArray = [user1 = {id : 1, name : "name1", age : 21},
@@ -81,7 +77,7 @@ function docsFromUser(array) {
     for (const user of array) {
         document.write(`<div>`);
         for (const userKey in user) {
-            document.write(`<li>${userKey} : ${user[userKey]}</li>`); // ??
+            document.write(`<li>${userKey} : ${user[userKey]}</li>`);
         }
         document.write(`</div>`);
     }
@@ -99,13 +95,13 @@ function minInt(array) {
     return minNumber;
 }
 //- створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
-summaryOfArray(intArray);
-function summaryOfArray(array) {
+sum(intArray);
+function sum(array) {
     let summary = 0;
     for (const number of array) {
         summary = summary + number;
     }
-    console.log(summary);
+    return summary;
 }
 //- створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
 let index1 = 3;
@@ -119,9 +115,9 @@ function swap(array, index1, index2) {
 //- Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 let money = 10000;
-let typeOfExchange = [{currency : "USD", value : 40},{currency : "EUR", value : 42}];
+let typesOfExchange = [{currency : "USD", value : 40},{currency : "EUR", value : 42}];
 let type = "USD";
-exchange(money, typeOfExchange, type);
+exchange(money, typesOfExchange, type);
 function exchange (money, typeOfExchange, type) {
     for (const exchange of typeOfExchange) {
         if (exchange.currency === type) {

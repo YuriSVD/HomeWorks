@@ -30,16 +30,15 @@ for (let i = 0; i < dirtyStr.length; i++) {
     }
 }
 let clearStr = dirtyStr.substring(startIndex, endIndex);
-//- Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
+//- Напишіть функцію stringToArray(str), яка перетворює рядок на масив слів.
 // let str = 'Ревуть воли як ясла повні';
-// let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
+// let arr = stringToArray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
 let str = "Ревуть воли як ясла повні";
 console.log(stringToArray(str));
 
 function stringToArray(str) {
     return str.split(" ");
 }
-
 //- є масив чисел [10,8,-7,55,987,-1011,0,1050, 0] . за допомоги map перетворити всі об'єкти в масиві на стрінгові.
 let intArray = [10, 8, -7, 55, 987, -1011, 0, 1050, 0];
 //  8, -7, 10, 55, 987, -1011, 0, 1050, 0
@@ -49,15 +48,28 @@ let intArray = [10, 8, -7, 55, 987, -1011, 0, 1050, 0];
 console.log(intArray);
 let stingArray = [];
 for (let number of intArray) {
-    strArray = intArray.map(number => "" + number);
+    strArray = intArray.map(number => number.toString());
 }
 //- створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 // let nums = [11,3, 21];
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
 let nums = [11, 21, 3];
-let direction = "descending";
+let direction = "ascending";
 let sortNums = (array, direction) => {
+    if (direction === "ascending") {
+        array.sort((a, b) => {
+            return a - b;
+        })
+    } else if (direction === "descending") {
+        array.sort((a, b )=> {
+          return b - a;
+        })
+    } else {
+        console.log("Something wrong");
+    }
+}
+/*let sortNums = (array, direction) => {
     if (direction === "ascending") {
         for (let i = 0; i < array.length; i++) {
             if (array[i] > array[i + 1]) {
@@ -80,8 +92,9 @@ let sortNums = (array, direction) => {
         console.log("Wrong type of direction");
     }
     return array;
-}
+}*/
 sortNums(nums, direction);
+console.log(nums);
 //- є масив
 let coursesAndDurationArray = [
     {title: 'JavaScript Complex', monthDuration: 5},
@@ -92,13 +105,17 @@ let coursesAndDurationArray = [
     {title: 'Frontend', monthDuration: 4}
 ];
 // -- відсортувати його за спаданням за monthDuration
+coursesAndDurationArray.sort((a, b) => {
+    return b.monthDuration - a.monthDuration;
+})
+console.log(coursesAndDurationArray);
 //  -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
+console.log(coursesAndDurationArray.filter(value => value.monthDuration > 5));
 //  -- за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration}
-let sort = array => {
-    for (let i = 0; i < array.length; i++) {
-    }
-}
-sort(coursesAndDurationArray);
+let coursesWithID = coursesAndDurationArray.map((value, index) => {
+    return {id: index + 1, ...value}
+})
+console.log(coursesWithID);
 //взяти з arrays.js (який лежить в папці 2023 plan) масив coursesArray
 let coursesArray = [
     {
@@ -138,67 +155,9 @@ let coursesArray = [
         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
     }
 ];
-let courses = [
-    {
-        title: 'JavaScript Complex',
-        monthDuration: 5,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js'],
-        logo: '',
-        price: 0,
-        rating: 5,
-        avgResult: 99
-    },
-    {
-        title: 'Java Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'java core', 'java advanced'],
-        logo: '',
-        price: 0,
-        rating: 4.998,
-        avgResult: 97
-    },
-    {
-        title: 'Python Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'python core', 'python advanced'],
-        logo: '',
-        price: 0,
-        rating: 4.812,
-        avgResult: 98
-    },
-    {
-        title: 'QA Complex',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'QA/QC'],
-        logo: '',
-        price: 0,
-        rating: 4.65,
-        avgResult: 97
-    },
-    {
-        title: 'FullStack',
-        monthDuration: 7,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js', 'python', 'java'],
-        logo: '',
-        price: 0,
-        rating: 4.772,
-        avgResult: 100
-    },
-    {
-        title: 'Frontend',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass'],
-        logo: '',
-        price: 0,
-        rating: 4.53,
-        avgResult: 90
-    }
-];
 //--написати пошук всіх об'єктів, в який в modules є sass
+let coursesWithSass = coursesArray.filter(value => value.modules.find(course => course === "sass"));
+console.log(coursesWithSass);
 // --написати пошук всіх об'єктів, в який в modules є docker
+let coursesWithDocker = coursesArray.filter(value => value.modules.find(course => course === "docker"));
+console.log(coursesWithDocker);
