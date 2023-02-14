@@ -83,7 +83,7 @@ let minNumber = minInt(array);
 let sumOfNumbers = array => {
     let summery = 0;
     for (const number of array) {
-        summery = summery + number;
+        summery += number;
     }
     return summery;
 }
@@ -95,7 +95,6 @@ let swap = (array, index1, index2) => {
     array[index2] = buffer;
 }
 swap(array, 0, 1);
-console.log(array);
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 let exchange = (money, typesOfExchange, typeToExchange) => {
