@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b5592bc-cbde-4c06-abf2-0dc00c85c413" name="Changes" comment="Update JS Lesson2, add Lesson 6">
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson9/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/Lesson9/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/Lesson5/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson5/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/Lesson7/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson8/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/Lesson7/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson8/main.js" afterDir="false" />
+    <list default="true" id="5b5592bc-cbde-4c06-abf2-0dc00c85c413" name="Changes" comment="Starr JS Lesson9">
+      <change beforePath="$PROJECT_DIR$/javascript/Lesson9/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson9/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +101,7 @@
       <workItem from="1676065360520" duration="1357000" />
       <workItem from="1676118365792" duration="828000" />
       <workItem from="1676130615272" duration="24183000" />
-      <workItem from="1676392434178" duration="5978000" />
+      <workItem from="1676392434178" duration="6314000" />
     </task>
     <task id="LOCAL-00001" summary="Add HomeWork for Lesson 2">
       <created>1674337306949</created>
@@ -192,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676216331883</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Starr JS Lesson9">
+      <created>1676404750366</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1676404750367</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +222,8 @@
     <MESSAGE value="Update JS Lesson2, add Lesson 3,4,5" />
     <MESSAGE value="Update JS Lesson2" />
     <MESSAGE value="Update JS Lesson2, add Lesson 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update JS Lesson2, add Lesson 6" />
+    <MESSAGE value="Starr JS Lesson9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starr JS Lesson9" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -42,9 +42,11 @@ let countOfLi = 3;
 funcWithUlAndCountOfLi(text, countOfLi);
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 let listFromArray = array => {
+    document.write(`<ul>`);
     for (let i = 0; i < array.length; i++) {
         document.write(`<li>${array[i]}</li>`);
     }
+    document.write(`</ul>`);
 }
 listFromArray(array);
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
