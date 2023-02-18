@@ -4,16 +4,13 @@ console.log(a.length);
 console.log(b.length);
 console.log(c.length);
 //- Перевести до великого регістру наступні стрінгові значення
-a = a.toUpperCase();
-b = b.toUpperCase();
-c = c.toUpperCase();
-console.log(a);
-console.log(b);
-console.log(c);
+let upperCaseA = a.toUpperCase();
+let upperCaseB = b.toUpperCase();
+let upperCaseC = c.toUpperCase();
 //- Перевести до нижнього регістру настипні стрінгові значення
-console.log(a.toLowerCase());
-console.log(b.toLowerCase());
-console.log(c.toLowerCase());
+let lowerCaseA = upperCaseA.toLowerCase();
+let lowerCaseB = upperCaseB.toLowerCase();
+let lowerCaseC = upperCaseC.toLowerCase();
 //- Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 let dirtyStr = " dirty string   ";
 let startIndex;
@@ -41,14 +38,10 @@ function stringToArray(str) {
 }
 //- є масив чисел [10,8,-7,55,987,-1011,0,1050, 0] . за допомоги map перетворити всі об'єкти в масиві на стрінгові.
 let intArray = [10, 8, -7, 55, 987, -1011, 0, 1050, 0];
-//  8, -7, 10, 55, 987, -1011, 0, 1050, 0
-//   -7, 8, 10, 55, 987, -1011, 0, 1050, 0
-//   -7, 8, 10, 55, , -1011, 0, 987 1050, 0
-//   -7, 8, 10, -1011, 55, 0, 987 1050, 0
 console.log(intArray);
-let stingArray = [];
 for (let number of intArray) {
-    strArray = intArray.map(number => number.toString());
+    console.log(typeof number);
+    intArray = intArray.map(number => number.toString());
 }
 //- створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 // let nums = [11,3, 21];
@@ -62,39 +55,14 @@ let sortNums = (array, direction) => {
             return a - b;
         })
     } else if (direction === "descending") {
-        array.sort((a, b )=> {
+        array.sort((a, b) => {
           return b - a;
         })
     } else {
-        console.log("Something wrong");
+        return "Something wrong";
     }
 }
-/*let sortNums = (array, direction) => {
-    if (direction === "ascending") {
-        for (let i = 0; i < array.length; i++) {
-            if (array[i] > array[i + 1]) {
-                let buffer = array[i];
-                array[i] = array[i + 1];
-                array[i + 1] = buffer;
-                i = -1;
-            }
-        }
-    } else if (direction === "descending") {
-        for (let i = 0; i < array.length; i++) {
-            if (array[i] < array[i + 1]) {
-                let buffer = array[i];
-                array[i] = array[i + 1];
-                array[i + 1] = buffer;
-                i = -1;
-            }
-        }
-    } else {
-        console.log("Wrong type of direction");
-    }
-    return array;
-}*/
 sortNums(nums, direction);
-console.log(nums);
 //- є масив
 let coursesAndDurationArray = [
     {title: 'JavaScript Complex', monthDuration: 5},
@@ -105,16 +73,13 @@ let coursesAndDurationArray = [
     {title: 'Frontend', monthDuration: 4}
 ];
 // -- відсортувати його за спаданням за monthDuration
-coursesAndDurationArray.sort((a, b) => {
-    return b.monthDuration - a.monthDuration;
-})
-console.log(coursesAndDurationArray);
+coursesAndDurationArray.sort((firstItem, secondItem) =>
+    secondItem.monthDuration - firstItem.monthDuration);
 //  -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
-console.log(coursesAndDurationArray.filter(value => value.monthDuration > 5));
+coursesAndDurationArray.filter(value => value.monthDuration > 5);
 //  -- за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration}
-let coursesWithID = coursesAndDurationArray.map((value, index) => {
-    return {id: index + 1, ...value}
-})
+let coursesWithID = coursesAndDurationArray.map((value, index) =>
+    ({id: index + 1, ...value}));
 console.log(coursesWithID);
 //взяти з arrays.js (який лежить в папці 2023 plan) масив coursesArray
 let coursesArray = [
@@ -157,7 +122,5 @@ let coursesArray = [
 ];
 //--написати пошук всіх об'єктів, в який в modules є sass
 let coursesWithSass = coursesArray.filter(value => value.modules.find(course => course === "sass"));
-console.log(coursesWithSass);
 // --написати пошук всіх об'єктів, в який в modules є docker
 let coursesWithDocker = coursesArray.filter(value => value.modules.find(course => course === "docker"));
-console.log(coursesWithDocker);
