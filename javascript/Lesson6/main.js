@@ -26,7 +26,7 @@ for (let i = 0; i < dirtyStr.length; i++) {
         }
     }
 }
-let clearStr = dirtyStr.substring(startIndex, endIndex); // dirtyStr.trim() або так
+let clearStr = dirtyStr.substring(startIndex, endIndex); // let clearStr = dirtyStr.trim() або так
 //- Напишіть функцію stringToArray(str), яка перетворює рядок на масив слів.
 // let str = 'Ревуть воли як ясла повні';
 // let arr = stringToArray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
