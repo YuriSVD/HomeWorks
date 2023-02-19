@@ -124,3 +124,79 @@ let coursesArray = [
 let coursesWithSass = coursesArray.filter(value => value.modules.find(course => course === "sass"));
 // --написати пошук всіх об'єктів, в який в modules є docker
 let coursesWithDocker = coursesArray.filter(value => value.modules.find(course => course === "docker"));
+//описати колоду карт (від 6 до туза без джокерів)
+let deckOfCards = [];
+deckOfCards.push({cardSuit: "spade", value: "6", color: "black"});
+deckOfCards.push({cardSuit: "spade", value: "7", color: "black"});
+deckOfCards.push({cardSuit: "spade", value: "8", color: "black"});
+deckOfCards.push({cardSuit: "spade", value: "9", color: "black"});
+deckOfCards.push({cardSuit: "spade", value: "10", color: "black"});
+deckOfCards.push({cardSuit: "spade", value: "jack", color: "black"});
+deckOfCards.push({cardSuit: "spade", value: "queen", color: "black"});
+deckOfCards.push({cardSuit: "spade", value: "king", color: "black"});
+deckOfCards.push({cardSuit: "spade", value: "ace", color: "black"});
+deckOfCards.push({cardSuit: "clubs", value: "6", color: "black"});
+deckOfCards.push({cardSuit: "clubs", value: "7", color: "black"});
+deckOfCards.push({cardSuit: "clubs", value: "8", color: "black"});
+deckOfCards.push({cardSuit: "clubs", value: "9", color: "black"});
+deckOfCards.push({cardSuit: "clubs", value: "10", color: "black"});
+deckOfCards.push({cardSuit: "clubs", value: "jack", color: "black"});
+deckOfCards.push({cardSuit: "clubs", value: "queen", color: "black"});
+deckOfCards.push({cardSuit: "clubs", value: "king", color: "black"});
+deckOfCards.push({cardSuit: "clubs", value: "ace", color: "black"});
+deckOfCards.push({cardSuit: "heart", value: "6", color: "red"});
+deckOfCards.push({cardSuit: "heart", value: "7", color: "red"});
+deckOfCards.push({cardSuit: "heart", value: "8", color: "red"});
+deckOfCards.push({cardSuit: "heart", value: "9", color: "red"});
+deckOfCards.push({cardSuit: "heart", value: "10", color: "red"});
+deckOfCards.push({cardSuit: "heart", value: "jack", color: "red"});
+deckOfCards.push({cardSuit: "heart", value: "queen", color: "red"});
+deckOfCards.push({cardSuit: "heart", value: "king", color: "red"});
+deckOfCards.push({cardSuit: "heart", value: "ace", color: "red"});
+deckOfCards.push({cardSuit: "diamond", value: "6", color: "red"});
+deckOfCards.push({cardSuit: "diamond", value: "7", color: "red"});
+deckOfCards.push({cardSuit: "diamond", value: "8", color: "red"});
+deckOfCards.push({cardSuit: "diamond", value: "9", color: "red"});
+deckOfCards.push({cardSuit: "diamond", value: "10", color: "red"});
+deckOfCards.push({cardSuit: "diamond", value: "jack", color: "red"});
+deckOfCards.push({cardSuit: "diamond", value: "queen", color: "red"});
+deckOfCards.push({cardSuit: "diamond", value: "king", color: "red"});
+deckOfCards.push({cardSuit: "diamond", value: "ace", color: "red"});
+//console.log(deckOfCards);
+//  - знайти піковий туз
+deckOfCards.find(item => item.value === "ace" && item.cardSuit === "spade" && item.color === "black");
+//  - всі шістки
+deckOfCards.filter(item => item.value === "6");
+//  - всі червоні карти
+deckOfCards.filter(item => item.color === "red");
+//  - всі буби
+deckOfCards.filter(item => item.cardSuit === "diamond");
+//  - всі трефи від 9 та більше
+deckOfCards.filter(item => (item.value === "9" || item.value.length > 1) && item.cardSuit === "clubs"); // Свида - ой, говнокод
+//
+// {
+//     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
+//     value: '', // '6'-'10', 'ace','jack','queen','king','joker'
+//     color:'', // 'red','black'
+// }
+//
+// =========================
+// Взяти описану колоду карт, та за допомоги reduce упакувати всі карти по "мастях" в об'єкт
+// {
+//     spades:[],
+//     diamonds:[],
+//     hearts:[],
+//     clubs:[]
+// }
+deckOfCards.reduce((deck, card) => {
+    if (card.cardSuit === "spade") {
+        deck.spades.push(card);
+    } else if (card.cardSuit === "diamond") {
+        deck.diamonds.push(card);
+    } else if (card.cardSuit === "heart") {
+        deck.hearts.push(card);
+    } else if (card.cardSuit === "clubs") {
+        deck.clubs.push(card);
+    }
+    return deck;
+}, {spades: [], diamonds: [], hearts: [], clubs: []});
