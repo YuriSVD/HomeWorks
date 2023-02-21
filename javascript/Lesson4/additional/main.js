@@ -15,14 +15,7 @@ function minNumber(firstNum, secondNum, thirdNum) {
 // - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
 console.log(maxNumber(a, b, c));
 function maxNumber(firstNum, secondNum, thirdNum) {
-    let maxNumber = firstNum;
-    if (secondNum > maxNumber) {
-        maxNumber = secondNum;
-    }
-    if (thirdNum > maxNumber) {
-        maxNumber = thirdNum;
-    }
-    return maxNumber;
+    return firstNum > secondNum ? firstNum > thirdNum ? firstNum : thirdNum : secondNum > thirdNum ? secondNum : thirdNum;
 }
 // - створити функцію яка повертає найбільше число з масиву
 let intArray = [10, 8, -7, 55, 987, -1011, 0, 1050, 0];
@@ -68,27 +61,79 @@ function f() {
     return minNum;
 }
 // - створити функцію яка заповнює масив рандомними числами
-
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
-// - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
-//
-//
-//
-//
-// - створити функцію, яка якщо приймає один аргумент, просто вивдоить його, якщо два аргументи - складає або конкатенує їх між собою.
-//
-// - створити функцію  яка приймає два масиви та скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
+function arrayWithRandomNumbers(array, countOfNum, limit) {
+    for (let i = 0; i < countOfNum; i++) {
+        array[i] = Math.round(Math.random() * limit);
+    }
+    return array;
+}
+console.log(arrayWithRandomNumbers([], 10, 100));
+// - Функція приймає масив та робить з нього новий масив у зворотньому порядку. [1,2,3] -> [3, 2, 1].
+let array = arrayWithRandomNumbers([], 10, 100);
+function reverseArray(array) {
+    for (let i = 0; i < array.length / 2; i++) {
+        let buffer = array[i];
+        array[i] = array[array.length - 1 - i];
+        array[array.length - 1 - i] = buffer;
+    }
+    return array;
+}
+reverseArray(array);
+// - створити функцію, яка якщо приймає один аргумент, просто виводить його, якщо два аргументи - складає або конкатенує їх між собою.
+function printer(a, b) {
+    if (!!!b) {
+        console.log(a);
+        return;
+    }
+    console.log(a + b);
+}
+printer("first");
+// - створити функцію яка приймає два масиви та складає значення елементів з однаковими індексами та повертає новий результівний масив.
 //   EXAMPLE:
 //   [1,2,3,4]
 //   [2,3,4,5]
 //   результат
 //   [3,5,7,9]
-//
-// - Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
+let firstArray = [1, 2, 3, 4];
+let secondArray = [2, 3, 4, 5];
+function sumOfArrays(firstArray, secondArray) {
+    let sum = [];
+    for (let i = 0; i < firstArray.length; i++) {
+        sum[i] = firstArray[i] + secondArray[i];
+    }
+    return sum;
+}
+sumOfArrays(firstArray, secondArray);
+// - Створити функцію яка приймає масив будь-яких об'єктів, та повертає масив ключів всіх об'єктів
 //   EXAMPLE:
 //   [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
-//
-// - Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
+function keyOfObject(array) {
+    let keys = [];
+    let i = 0;
+    for (let data of array) {
+        for (let key in data) {
+            keys[i] = key;
+            i++;
+        }
+    }
+    return keys;
+}
+let arrayWithObjects = [{name: 'Dima', age: 13}, {model: 'Camry'}];
+console.log(keyOfObject(arrayWithObjects));
+// - Створити функцію яка приймає масив будь-яких об'єктів, та повертає масив значень всіх обєктів
 //   EXAMPLE:
 //   [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+function dataOfObject(array) {
+    let keys = [];
+    let i = 0;
+    for (let data of array) {
+        for (let key in data) {
+            keys[i] = data[key];
+            i++;
+        }
+    }
+    return keys;
+}
+console.log(dataOfObject(arrayWithObjects));

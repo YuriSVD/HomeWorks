@@ -51,9 +51,7 @@ let nums = [11, 21, 3];
 let direction = "ascending";
 let sortNums = (array, direction) => {
     if (direction === "ascending") {
-        array.sort((a, b) => {
-            return a - b;
-        })
+        array.sort((a, b) => a - b)
     } else if (direction === "descending") {
         array.sort((a, b) => {
           return b - a;
@@ -125,43 +123,43 @@ let coursesWithSass = coursesArray.filter(value => value.modules.find(course => 
 // --написати пошук всіх об'єктів, в який в modules є docker
 let coursesWithDocker = coursesArray.filter(value => value.modules.find(course => course === "docker"));
 //описати колоду карт (від 6 до туза без джокерів)
-let deckOfCards = [];
-deckOfCards.push({cardSuit: "spade", value: "6", color: "black"});
-deckOfCards.push({cardSuit: "spade", value: "7", color: "black"});
-deckOfCards.push({cardSuit: "spade", value: "8", color: "black"});
-deckOfCards.push({cardSuit: "spade", value: "9", color: "black"});
-deckOfCards.push({cardSuit: "spade", value: "10", color: "black"});
-deckOfCards.push({cardSuit: "spade", value: "jack", color: "black"});
-deckOfCards.push({cardSuit: "spade", value: "queen", color: "black"});
-deckOfCards.push({cardSuit: "spade", value: "king", color: "black"});
-deckOfCards.push({cardSuit: "spade", value: "ace", color: "black"});
-deckOfCards.push({cardSuit: "clubs", value: "6", color: "black"});
-deckOfCards.push({cardSuit: "clubs", value: "7", color: "black"});
-deckOfCards.push({cardSuit: "clubs", value: "8", color: "black"});
-deckOfCards.push({cardSuit: "clubs", value: "9", color: "black"});
-deckOfCards.push({cardSuit: "clubs", value: "10", color: "black"});
-deckOfCards.push({cardSuit: "clubs", value: "jack", color: "black"});
-deckOfCards.push({cardSuit: "clubs", value: "queen", color: "black"});
-deckOfCards.push({cardSuit: "clubs", value: "king", color: "black"});
-deckOfCards.push({cardSuit: "clubs", value: "ace", color: "black"});
-deckOfCards.push({cardSuit: "heart", value: "6", color: "red"});
-deckOfCards.push({cardSuit: "heart", value: "7", color: "red"});
-deckOfCards.push({cardSuit: "heart", value: "8", color: "red"});
-deckOfCards.push({cardSuit: "heart", value: "9", color: "red"});
-deckOfCards.push({cardSuit: "heart", value: "10", color: "red"});
-deckOfCards.push({cardSuit: "heart", value: "jack", color: "red"});
-deckOfCards.push({cardSuit: "heart", value: "queen", color: "red"});
-deckOfCards.push({cardSuit: "heart", value: "king", color: "red"});
-deckOfCards.push({cardSuit: "heart", value: "ace", color: "red"});
-deckOfCards.push({cardSuit: "diamond", value: "6", color: "red"});
-deckOfCards.push({cardSuit: "diamond", value: "7", color: "red"});
-deckOfCards.push({cardSuit: "diamond", value: "8", color: "red"});
-deckOfCards.push({cardSuit: "diamond", value: "9", color: "red"});
-deckOfCards.push({cardSuit: "diamond", value: "10", color: "red"});
-deckOfCards.push({cardSuit: "diamond", value: "jack", color: "red"});
-deckOfCards.push({cardSuit: "diamond", value: "queen", color: "red"});
-deckOfCards.push({cardSuit: "diamond", value: "king", color: "red"});
-deckOfCards.push({cardSuit: "diamond", value: "ace", color: "red"});
+let deckOfCards = [
+{cardSuit: "spade", value: "6", color: "black"},
+{cardSuit: "spade", value: "7", color: "black"},
+{cardSuit: "spade", value: "8", color: "black"},
+{cardSuit: "spade", value: "9", color: "black"},
+{cardSuit: "spade", value: "10", color: "black"},
+{cardSuit: "spade", value: "jack", color: "black"},
+{cardSuit: "spade", value: "queen", color: "black"},
+{cardSuit: "spade", value: "king", color: "black"},
+{cardSuit: "spade", value: "ace", color: "black"},
+{cardSuit: "clubs", value: "6", color: "black"},
+{cardSuit: "clubs", value: "7", color: "black"},
+{cardSuit: "clubs", value: "8", color: "black"},
+{cardSuit: "clubs", value: "9", color: "black"},
+{cardSuit: "clubs", value: "10", color: "black"},
+{cardSuit: "clubs", value: "jack", color: "black"},
+{cardSuit: "clubs", value: "queen", color: "black"},
+{cardSuit: "clubs", value: "king", color: "black"},
+{cardSuit: "clubs", value: "ace", color: "black"},
+{cardSuit: "heart", value: "6", color: "red"},
+{cardSuit: "heart", value: "7", color: "red"},
+{cardSuit: "heart", value: "8", color: "red"},
+{cardSuit: "heart", value: "9", color: "red"},
+{cardSuit: "heart", value: "10", color: "red"},
+{cardSuit: "heart", value: "jack", color: "red"},
+{cardSuit: "heart", value: "queen", color: "red"},
+{cardSuit: "heart", value: "king", color: "red"},
+{cardSuit: "heart", value: "ace", color: "red"},
+{cardSuit: "diamond", value: "6", color: "red"},
+{cardSuit: "diamond", value: "7", color: "red"},
+{cardSuit: "diamond", value: "8", color: "red"},
+{cardSuit: "diamond", value: "9", color: "red"},
+{cardSuit: "diamond", value: "10", color: "red"},
+{cardSuit: "diamond", value: "jack", color: "red"},
+{cardSuit: "diamond", value: "queen", color: "red"},
+{cardSuit: "diamond", value: "king", color: "red"},
+{cardSuit: "diamond", value: "ace", color: "red"}];
 //console.log(deckOfCards);
 //  - знайти піковий туз
 deckOfCards.find(item => item.value === "ace" && item.cardSuit === "spade" && item.color === "black");
