@@ -91,19 +91,23 @@ swap(intArray, 2);
 // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
 // Двожина масиву від 2 до 100
 let zeroToTheEnd = array => {
-    for (let i = 0; i < array.length; i++) {
+    let j = 0;
+    for (let i = 0; i < array.length - j; i++) {
         if (!array[i]) {
             let swapStart = i;
-            for (swapStart; swapStart < array.length - 1; swapStart++) {
+            let swapEnd = array.length - 1 - j;
+            for (swapStart; swapStart < swapEnd; swapStart++) {
                 let buffer = array[swapStart];
                 array[swapStart] = array[swapStart + 1];
                 array[swapStart + 1] = buffer;
             }
+            i = -1;
+            j++;
         }
     }
     return array;
 }
-zeroToTheEnd(intArray);
+console.log(zeroToTheEnd([0, 0, 0, 0, 10, 8, 0, -7, 55, 0, 987, 0, -1011, 1050]));
 // EXAMPLE:
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
