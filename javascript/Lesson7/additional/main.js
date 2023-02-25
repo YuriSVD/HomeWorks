@@ -67,6 +67,11 @@ console.log(newUser);
 //  -опис дії атрибуту
 //  інформацію брати з htmlbook.ru
 //
+function Tag(titleOfTag, action, attrs) {
+        this.titleOfTag = titleOfTag;
+        this.action = action;
+        this.attrs = attrs;
+}
 //  Таким чином описати теги
 //  -a
 //  -div
@@ -76,15 +81,6 @@ console.log(newUser);
 //  -form
 //  -option
 //  -select
-//  Приклад результуючого об'єкту
-class Tag {
-    constructor(titleOfTag, action, attrs) {
-        this.titleOfTag = titleOfTag;
-        this.action = action;
-        this.attrs = attrs;
-    }
-}
-
 let a = new Tag("a", "Тег a является одним из важных элементов HTML и предназначен для создания ссылок.",
     [{titleOfAttr: "accesskey", actionOfAttr: "Атрибут accesskey позволяет активировать ссылку с помощью некоторого сочетания клавиш с заданной в коде ссылки буквой или цифрой."},
         {titleOfAttr: "coords", actionOfAttr: "Атрибут coords применяется к ссылкам, которые располагаются внутри контейнера object."},
@@ -112,6 +108,7 @@ let select = new Tag("select", "Тег select позволяет создать 
     [{titleOfAttr: "accesskey", actionOfAttr: "Позволяет перейти к списку с помощью некоторого сочетания клавиш."},
         {titleOfAttr: "autofocus", actionOfAttr: "Устанавливает, что список получает фокус после загрузки страницы."},
         {titleOfAttr: "disabled", actionOfAttr: "Блокирует доступ и изменение элемента."}]);
+//  Приклад результуючого об'єкту
 //    {
 //         titleOfTag: 'area',
 //         action: `Каждый элемент <area> определяет активные области изображения, которые являются ссылками...`,
