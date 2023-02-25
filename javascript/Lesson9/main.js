@@ -217,7 +217,14 @@ for (const course of coursesArray) {
 }
 
 // - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
-//
+let someElement = document.createElement("h2");
+someElement.id = "text";
+someElement.innerText = "I am visible";
+document.body.append(someElement);
+someElement.onclick = function () {
+    someElement.style.color = "white";
+}
+
 //
 // - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 //
