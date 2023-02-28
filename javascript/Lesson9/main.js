@@ -1,16 +1,17 @@
 //- створити блок,
-// - додати йому класи wrap, collapse, alpha, beta
-// - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту
-// - додати цей блок в body.
-// - клонувати його повністю, та додати клон в body.
 let element = document.createElement("div");
 element.innerText = "some text";
+// - додати йому класи wrap, collapse, alpha, beta
+element.classList.add("wrap", "collapse", "alpha", "beta");
+// - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту
 element.style.background = "silver";
 element.style.color = "blue";
 element.style.fontSize = "20px";
-element.classList.add("wrap", "collapse", "alpha", "beta");
-document.body.append(element);
-document.body.append(element);
+// - додати цей блок в body.
+document.body.appendChild(element);
+// - клонувати його повністю, та додати клон в body.
+let cloneElement = element.cloneNode(true);
+document.body.appendChild(cloneElement);
 // - Є масив:
 // ['Main','Products','About us','Contacts']
 // Зробити ul в середині якої будуть лежати елементи масиву (кожен в своєму li)
@@ -19,9 +20,9 @@ let ul = document.createElement("ul");
 for (let data of array) {
     let li = document.createElement("li");
     li.innerText = data;
-    ul.append(li);
+    ul.appendChild(li);
 }
-document.body.append(ul);
+document.body.appendChild(ul);
 // - Є масив
 let coursesAndDurationArray = [{title: 'JavaScript Complex', monthDuration: 5},
     {title: 'Java Complex', monthDuration: 6},
@@ -29,15 +30,16 @@ let coursesAndDurationArray = [{title: 'JavaScript Complex', monthDuration: 5},
     {title: 'QA Complex', monthDuration: 4},
     {title: 'FullStack', monthDuration: 7},
     {title: 'Frontend', monthDuration: 4}];
-// Для кожного елементу  масиву зробити блок в якому вивести інформацію про title та monthDuration
+// Для кожного елементу масиву зробити блок в якому вивести інформацію про title та monthDuration
 // Завдання робити через цикли.
 for (let data of coursesAndDurationArray) {
     let div = document.createElement("div");
     for (const dataKey in data) {
-        let info = `${dataKey} : ${data[dataKey]}; `;
-        div.append(info);
+        let dataDiv = document.createElement("div");
+        dataDiv.append(`${dataKey} : ${data[dataKey]}`);
+        div.appendChild(dataDiv);
     }
-    document.body.append(div);
+    document.body.appendChild(div);
 }
 // =========================
 //
@@ -59,11 +61,11 @@ for (let data of coursesAndDurationArray) {
     h1.classList.add("heading");
     let p = document.createElement("p");
     p.classList.add("description");
-    h1.append(`${data.title}`);
-    p.append(`${data.monthDuration}`);
-    div.append(h1);
-    div.append(p);
-    document.body.append(div);
+    h1.append(data.title);
+    p.append(data.monthDuration);
+    div.appendChild(h1);
+    div.appendChild(p);
+    document.body.appendChild(div);
 }
 // ==========================
 //
@@ -110,14 +112,16 @@ let simpsons = [
 for (const simpsonMember of simpsons) {
     let simpson = document.createElement("div");
     simpson.classList.add("member");
-    let hading = document.createElement("h1");
-    hading.innerText = `${simpsonMember.name} ${simpsonMember.surname}`; //simpsonMember.name + simpsonMember.surname;
+    let hading = document.createElement("h2");
+    hading.innerText = `${simpsonMember.name} ${simpsonMember.surname}`;
     let description = document.createElement("p");
     description.innerText = simpsonMember.info;
+    description.style.textAlign = "justify";
     let image = document.createElement("img");
     image.src = simpsonMember.photo;
+    image.style.height = "200px";
     simpson.append(hading, image, description);
-    document.body.append(simpson);
+    document.body.append(simpson); // роки не знаю де додати
 }
 
 // =========================
@@ -220,14 +224,59 @@ for (const course of coursesArray) {
 let someElement = document.createElement("h2");
 someElement.id = "text";
 someElement.innerText = "I am visible";
-document.body.append(someElement);
-someElement.onclick = function () {
-    someElement.style.color = "white";
+document.body.appendChild(someElement);
+let button = document.createElement("button");
+button.innerText = "Press me";
+document.body.appendChild(button);
+button.onclick = function () {
+    let target = document.getElementById("text");
+    target.style.color = "white";
 }
-
 //
 // - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
-//
+let checking = document.createElement("div");
+let input = document.createElement("input");
+input.type = "number";
+checking.appendChild(input);
+let buttonSend = document.createElement("button");
+buttonSend.innerText = "Send";
+checking.appendChild(buttonSend);
+document.body.append(checking);
+buttonSend.onclick = function () {
+    if (input.value < 18) {
+        alert("This content not for you, baby");
+    }
+}
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
+let div = document.createElement("div");
+let countOfStrings = document.createElement("input");
+countOfStrings.type = "number";
+div.append(countOfStrings);
+let countOfCells = document.createElement("input");
+countOfCells.type = "number";
+div.append(countOfCells);
+let dataOfCell = document.createElement("input");
+dataOfCell.type = "text";
+div.append(dataOfCell);
+let createButton = document.createElement("button");
+createButton.innerText = "Create";
+div.append(createButton);
+document.body.append(div);
+createButton.onclick = function () {
+    let table = document.createElement("table");
+    table.style.border = "2px solid";
+    for (let i = 0; i < countOfStrings.value; i++) {
+        let tr = document.createElement("tr");
+        for (let j = 0; j < countOfCells.value; j++) {
+            let th = document.createElement("th");
+            th.style.border = "1px solid";
+            th.innerText = dataOfCell.value;
+            th.style.fontSize = "20px";
+            tr.append(th);
+        }
+        table.append(tr);
+    }
+    document.body.append(table);
+}
 // При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
