@@ -241,7 +241,7 @@ checking.appendChild(input);
 let buttonSend = document.createElement("button");
 buttonSend.innerText = "Send";
 checking.appendChild(buttonSend);
-document.body.append(checking);
+document.body.appendChild(checking);
 buttonSend.onclick = function () {
     if (input.value < 18) {
         alert("This content not for you, baby");
@@ -251,17 +251,17 @@ buttonSend.onclick = function () {
 let div = document.createElement("div");
 let countOfStrings = document.createElement("input");
 countOfStrings.type = "number";
-div.append(countOfStrings);
+div.appendChild(countOfStrings);
 let countOfCells = document.createElement("input");
 countOfCells.type = "number";
-div.append(countOfCells);
+div.appendChild(countOfCells);
 let dataOfCell = document.createElement("input");
 dataOfCell.type = "text";
-div.append(dataOfCell);
+div.appendChild(dataOfCell);
 let createButton = document.createElement("button");
 createButton.innerText = "Create";
-div.append(createButton);
-document.body.append(div);
+div.appendChild(createButton);
+document.body.appendChild(div);
 createButton.onclick = function () {
     let table = document.createElement("table");
     table.style.border = "2px solid";
@@ -272,11 +272,11 @@ createButton.onclick = function () {
             th.style.border = "1px solid";
             th.innerText = dataOfCell.value;
             th.style.fontSize = "20px";
-            tr.append(th);
+            tr.appendChild(th);
         }
-        table.append(tr);
+        table.appendChild(tr);
     }
-    document.body.append(table);
+    document.body.appendChild(table);
 }
 // При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
