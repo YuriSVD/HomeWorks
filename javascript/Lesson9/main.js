@@ -231,6 +231,7 @@ document.body.appendChild(button);
 button.onclick = function () {
     let target = document.getElementById("text");
     target.style.color = "white";
+    someElement.innerText = "And now, I am invisible";
 }
 //
 // - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
@@ -245,6 +246,8 @@ document.body.appendChild(checking);
 buttonSend.onclick = function () {
     if (input.value < 18) {
         alert("This content not for you, baby");
+    } else {
+        document.location = "https://www.google.com.ua/";  // так і проситься тут PornHub. Не знаю чи оціните.
     }
 }
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
@@ -264,7 +267,11 @@ div.appendChild(createButton);
 document.body.appendChild(div);
 createButton.onclick = function () {
     let table = document.createElement("table");
+    table.id = "create";
     table.style.border = "2px solid";
+    if  (countOfStrings.value === "" || countOfCells.value === "" || dataOfCell.value === "") {
+        return;
+    }
     for (let i = 0; i < countOfStrings.value; i++) {
         let tr = document.createElement("tr");
         for (let j = 0; j < countOfCells.value; j++) {
@@ -276,6 +283,9 @@ createButton.onclick = function () {
         }
         table.appendChild(tr);
     }
+    countOfStrings.value = ""
+    countOfCells.value = "";
+    dataOfCell.value = "";
     document.body.appendChild(table);
 }
 // При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
