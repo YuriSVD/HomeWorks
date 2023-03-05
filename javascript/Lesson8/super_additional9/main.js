@@ -98,6 +98,18 @@ for (let user of users) {
 //- є сторінка rules.html. Контентом сторінки є заголовки та параграфи. Заголовки (h2) характеризують тему контенту яка вказана в параграфі.
 //    створити скріпт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li), який буде змістом того, що знаходиться на сторінці.
 //    Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
+let h2Array = document.body.getElementsByTagName("h2");
+console.log(h2Array);
+let div = document.createElement("div");
+let ul = document.createElement("ul");
+div.id = "content";
+for (const h2 of h2Array) {
+    let li = document.createElement("li");
+    li.append(h2);
+    ul.append(li);
+}
+div.append(ul);
+document.body.append(div);
 
 //-Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
 //    При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.

@@ -234,6 +234,7 @@
 //Створити під кожен елемент окремий блок. В цьому блоці, під кожну властивість, та властивості внутрішніх об'єктів створити свої окремі блок.
 for (let user of usersList) {
     let userDiv = document.createElement("div");
+    userDiv.style.marginBottom = "10px";
     for (let item in user) {
         let info = user[item];
         let itemDiv = document.createElement("div");
@@ -261,5 +262,35 @@ for (let user of usersList) {
     document.body.append(userDiv)
 }
 //за допомоги рекурсії перебрати структуру сторінки. зробити об'єкт, всі заголовки покласти в (масив) характеристику headings,всі параграфи покласти в характеристику (масив) paragraphs
+let object = {headings : [], paragraphs : []};
+function explorer(element) {
+    let h2Array = element.getElementsByTagName("h2");
+    let pArray = element.getElementsByTagName("p");
+    if (h2Array) {
+        for (const h2 of h2Array) {
+            object.headings.push(h2);
+        }
+    }
+    if (pArray) {
+        for (const p of pArray) {
+            object.paragraphs.push(p);
+        }
+    }
+    if (element.children.length > 0) {
+        for (let child of element.children) {
+            explorer(child);
+        }
+    }
+}
+explorer(document.body);
 //зробити div contenteditable ввести будь яке ціле слово. та при натисканні табуляції перетворити його на подвійний тег
+let contenteditable = document.createElement("div");
+let someWord = "some";
+contenteditable.innerText = someWord;
+document.body.append(contenteditable);
+document.onkeydown = (e) => {
+    if (e.code === "Tab") {
+        contenteditable.innerText = `<${someWord}></${someWord}>`;
+    }
+}
 //asd ->tab-> <asd></asd>
