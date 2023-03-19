@@ -265,7 +265,7 @@ let createButton = document.createElement("button");
 createButton.innerText = "Create";
 div.appendChild(createButton);
 document.body.appendChild(div);
-createButton.onclick = function () {
+createButton.onclick = function (ev) {
     let table = document.createElement("table");
     table.id = "create";
     table.style.border = "2px solid";

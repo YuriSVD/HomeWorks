@@ -11,8 +11,15 @@
       <change afterPath="$PROJECT_DIR$/javascript/Lesson11/additional11/favorites.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/javascript/Lesson11/additional11/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/javascript/Lesson11/additional11/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/MiniProject/accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/MiniProject/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/MiniProject/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/MiniProject/post-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/MiniProject/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/MiniProject/user-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/MiniProject/userInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/Lesson10/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson10/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/Lesson10/sessionMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson10/sessionMain.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/Lesson9/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Lesson9/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,9 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -60,7 +67,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/100062924/OktenSchool/HomeWorks/javascript/Lesson2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/100062924/OktenSchool/html&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -129,7 +136,12 @@
       <workItem from="1677166048141" duration="1618000" />
       <workItem from="1677180722418" duration="4052000" />
       <workItem from="1677270819628" duration="71352000" />
-      <workItem from="1677782458930" duration="34095000" />
+      <workItem from="1677782458930" duration="37040000" />
+      <workItem from="1678120137556" duration="5587000" />
+      <workItem from="1678131094126" duration="18280000" />
+      <workItem from="1678520026157" duration="50058000" />
+      <workItem from="1678813281199" duration="3729000" />
+      <workItem from="1679128834838" duration="30711000" />
     </task>
     <task id="LOCAL-00001" summary="Add HomeWork for Lesson 2">
       <created>1674337306949</created>
@@ -334,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678023402926</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Add Lesson 10">
+      <created>1678040941026</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1678040941027</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
